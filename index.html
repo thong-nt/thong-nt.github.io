@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wisdth=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6cac524433.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <canvas id="test" ></canvas>
+    <div id="naviboard">
+        <div class="container">
+            <nav>
+                <img src="images/Z_logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#naviboard">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+        <div class="header-text">
+            <h1>Hi, <br> I'm Thong, <br> Embedded System.</h1>
+            <p>Automantion Tool Designer | Tester</p>
+        </div>
+    </div>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/perlin.js'></script><script src="./script.js"></script>
+
+    <!-- About -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p> Lorem ipsum dolor sit amet, consectetur et adipiscing elit. 
+                        Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. 
+                        Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. 
+                        Integer sollicitudin mauris nec lorem luctus ultrices. 
+                        Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. 
+                        Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+                    <div class="tab-tittles">
+                        <p class="tab-links active-link"  onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"  onclick="opentab('exp')">Experience</p>
+                        <p class="tab-links"  onclick="opentab('edu')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Boblalblalldal</li>
+                            <li><span>Tool</span><br>Boblalblalldal</li>
+                            <li><span>Embedded</span><br>Boblalblalldal</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="exp">
+                        <ul>
+                            <li><span>Bosch</span><br>Boblalblalldal</li>
+                            <li><span>ABB</span><br>Boblalblalldal</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="edu">
+                        <ul>
+                            <li><span>Tampere University</span><br>Boblalblalldal</li>
+                            <li><span>Ho Chi Minh University of Technology</span><br>Boblalblalldal</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-col-1"><img src="images/cv.png"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Projects -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Thesis name</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. 
+                        Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. 
+                        Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. 
+                        Integer sollicitudin mauris nec lorem luctus ultrices. 
+                        Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. 
+                        Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+                    <a href="#">Learn more</a> 
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-robot"></i>
+                    <h2>Tool</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. 
+                        Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. 
+                        Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. 
+                        Integer sollicitudin mauris nec lorem luctus ultrices. 
+                        Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. 
+                        Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+                    <a href="#">Learn more</a> 
+                </div>
+                <div>
+                    <i class="fa-solid fa-toolbox"></i>
+                    <h2>ABB project</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur et adipiscing elit. 
+                        Praesent eleifend dignissim arcu, at eleifend sapien imperdiet ac. 
+                        Aliquam erat volutpat. Praesent urna nisi, fringila lorem et vehicula lacinia quam. 
+                        Integer sollicitudin mauris nec lorem luctus ultrices. 
+                        Aliquam libero et malesuada fames ac ante ipsum primis in faucibus. 
+                        Cras viverra ligula sit amet ex mollis mattis lorem ipsum dolor sit amet.</p>
+                    <a href="#">Learn more</a>
+                </div>   
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Portfolio
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/IRB_5720_9.jpg">
+                        <div class="layer">
+                            <h3>Thesis</h3>
+                            <p>fhdsfhdskfhsdkjfhsdkfhdskjfhksfh</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/IRB_5720_9.jpg">
+                        <div class="layer">
+                            <h3>Bosch</h3>
+                            <p>fhdsfhdskfhsdkjfhsdkfhdskjfhksfh</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/IRB_5720_9.jpg">
+                        <div class="layer">
+                            <h3>ABB</h3>
+                            <p>fhdsfhdskfhsdkjfhsdkfhdskjfhksfh</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Contact -->
+    <div id="contact">
+        <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact me</h1>
+                        <p><i class="fa-regular fa-envelope"></i> Trithong2103@gmail.com</p>
+                        <p><i class="fa-solid fa-mobile-screen-button"></i> (+358) 0468983781</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/ntt2103/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://t.me/TThongNguyen"><i class="fa-brands fa-telegram"></i></a>
+                        </div>
+                        <a href="images/Nguyen_Tri_Thong_CV.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name="Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Kevin. <i class="fa-sharp fa-solid fa-bolt"></i> Modified by Thong. <i class="fa-sharp fa-solid fa-bolt"></i></p>
+        </div>
+    </div>
+
+
+    
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemeu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemeu.style.right = "0";
+        }
+        function closemenu(){
+            sidemeu.style.right = "-400px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzMnR2GDMEaCqbCNUfbc87mHL77YOCslpD3tBzPq181mm8HGy5OhWMiuRv1iaYMbghh/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message delivered successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },5000)
+                form.reset()
+        })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
