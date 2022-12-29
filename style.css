@@ -11,7 +11,7 @@ body{
     background: #080808;
     color:  #fff;
 }
-#naviboard{
+#home{
     width: 100%;
     height: 100vh;
     background: #080808;
@@ -73,13 +73,6 @@ nav ul li a:hover{
                 0 0 25px #03e9f4,
                 0 0 50px #03e9f4,
                 0 0 100px #03e9f4;
-}
-
-.iconset i{
-    color: #fff;
-    margin-left: 60%;
-    margin-top: 10%;
-    position:relative;
 }
 
 .header-text{
@@ -194,7 +187,7 @@ canvas {
     margin: 20px 0px;
 }
 .tab-contents ul li span{
-    color: #0dc0c0;
+    color: #fcfcfc;
     font-weight: bold;
     margin: 10px 0;
     font-size: 15px;
@@ -216,7 +209,7 @@ canvas {
     left: 0;
     height: 5px;
     width: 60%;
-    background: #da35a8;
+    background: #2e70ff;
     animation: lineH1 2s ;
 }
 
@@ -226,10 +219,34 @@ canvas {
     left: 0;
     height: 5px;
     width: 45%;
-    background: #ff2e2e;
+    background: #5335da;
     animation: lineH2 2s ;
 }
 
+.cppbaseline{
+    position: relative;
+    margin-top: 0;
+    left: 0;
+    height: 5px;
+    width: 90%;
+    background: #434444;
+}
+.pybaseline{
+    position: relative;
+    margin-top: 0;
+    left: 0;
+    height: 5px;
+    width: 90%;
+    background: #434444;
+}
+.embaseline{
+    position: relative;
+    margin-top: 0;
+    left: 0;
+    height: 5px;
+    width: 90%;
+    background: #434444;
+}
 @keyframes lineH{
     0%{
         width: 0%;
@@ -290,7 +307,7 @@ canvas {
 }
 
 .service-list div i{
-    font-size: 45px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
@@ -398,11 +415,11 @@ canvas {
 
 /* Contact */
 .contact-left{
-    margin-top: 20%;
+    margin-top: 15%;
     flex-basis: 35%;
 }
 .contact-right{
-    margin-top: 20%;
+    margin-top: 15%;
     flex-basis: 60%;
 }
 .contact-left p{
@@ -451,6 +468,7 @@ form input, form textarea{
     color: #fff;
     font-size: 18px;
     border-radius: 5px;
+    resize: none;
 }
 
 form .btn2{
@@ -461,12 +479,13 @@ form .btn2{
 }
 
 .copyright{
+
     width: 100%;
     text-align: center;
     padding: 25px 0;
     font-weight: 300;
     background: #2e2d31;
-    margin-top: 20px;
+    margin-top: 10%;
 }
 
 .copyright i{
